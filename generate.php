@@ -17,7 +17,7 @@ $document->loadHTML($result);
 
 $xpath = new DOMXPath($document);
 
-$characters = $xpath->query("//div[@id='mw-content-text']/*/dt");
+$characters = $xpath->query("//div[@id='mw-content-text']/table[@*]/tr/td/span[@*]");
 
 $charactersArr = array();
 foreach ($characters as $character) {
